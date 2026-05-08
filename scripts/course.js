@@ -37,7 +37,7 @@ const courses = [
     certificate: 'Web and Computer Programming',
     description: 'This course will introduce object-oriented programming.',
     technology: ['C#'],
-    completed: false
+    completed: true
   },
   {
     subject: 'WDD',

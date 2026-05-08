@@ -1,0 +1,73 @@
+@media (min-width: 768px) {
+
+  /* === Header === */
+  header {
+    flex-wrap: nowrap;
+    padding: 1rem 2.5rem;
+  }
+
+  #menu-btn {
+    display: none;
+  }
+
+  #main-nav {
+    display: block;
+    width: auto;
+  }
+
+  #main-nav ul {
+    flex-direction: row;
+    gap: 0.25rem;
+    padding: 0;
+  }
+
+  #main-nav ul li a {
+    padding: 0.45rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  /* === Main === */
+  main {
+    padding: 3rem 2.5rem;
+  }
+
+  /* === Profile === */
+  .profile-card {
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .profile-img-wrap {
+    width: 160px;
+    height: 160px;
+  }
+
+  /* === Course Grid === */
+  .course-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+
+  /* === Footer === */
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem 2.5rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    padding: 3.5rem 3rem;
+  }
+
+  .course-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  section {
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "members": [
+    {
+      "name": "Santo Domingo Tech Hub",
+      "address": "Av. Winston Churchill 1099, Santo Domingo",
+      "phone": "(809) 555-1001",
+      "website": "https://sdtechhub.com",
+      "image": "profile.svg",
+      "membership": 3,
+      "description": "Leading technology incubator and coworking space in the capital."
+    },
+    {
+      "name": "Café Quisqueya",
+      "address": "Calle El Conde 305, Zona Colonial",
+      "phone": "(809) 555-1002",
+      "website": "https://cafequisqueya.com",
+      "image": "profile.svg",
+      "membership": 2,
+      "description": "Traditional Dominican coffee shop with specialty roasts."
+    },
+    {
+      "name": "Constructora Caribeña",
+      "address": "Av. Tiradentes 45, Naco, Santo Domingo",
+      "phone": "(809) 555-1003",
+      "website": "https://constructoracaribena.com",
+      "image": "profile.svg",
+      "membership": 3,
+      "description": "Full-service construction and real estate development company."
+    },
+    {
+      "name": "Farmacia La Salud",
+      "address": "Av. Independencia 220, Santo Domingo",
+      "phone": "(809) 555-1004",
+      "website": "https://farmaciasalud.com",
+      "image": "profile.svg",
+      "membership": 1,
+      "description": "Community pharmacy serving Santo Domingo for over 30 years."
+    },
+    {
+      "name": "Supermercado Plenitud",
+      "address": "Av. John F. Kennedy 500, Santo Domingo",
+      "phone": "(809) 555-1005",
+      "website": "https://supermercadoplenitud.com",
+      "image": "profile.svg",
+      "membership": 2,
+      "description": "Full-service supermarket with local and imported products."
+    },
+    {
+      "name": "Estudio Creativo Taino",
+      "address": "Calle Hostos 78, Gazcue, Santo Domingo",
+      "phone": "(809) 555-1006",
+      "website": "https://estudiotatino.com",
+      "image": "profile.svg",
+      "membership": 1,
+      "description": "Graphic design and branding studio for local businesses."
+    },
+    {
+      "name": "Hotel Majestic Caribe",
+      "address": "Malecón 1200, Santo Domingo",
+      "phone": "(809) 555-1007",
+      "website": "https://hotelmajesticcaribe.com",
+      "image": "profile.svg",
+      "membership": 3,
+      "description": "Boutique hotel with ocean views and event spaces."
+    },
+    {
+      "name": "Transportes Rápidos del Este",
+      "address": "Autopista del Este Km 12, Santo Domingo Este",
+      "phone": "(809) 555-1008",
+      "website": "https://transporteseste.com",
+      "image": "profile.svg",
+      "membership": 1,
+      "description": "Freight and logistics services across the Dominican Republic."
+    }
+  ]
+}

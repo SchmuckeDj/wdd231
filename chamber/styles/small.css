@@ -48,10 +48,10 @@ header {
   gap: 0.75rem;
 }
 
-.header-brand h1 {
+.header-brand .brand-name {
   font-family: var(--font-heading);
   font-size: 1.25rem;
-  margin: 0;
+  display: block;
   color: var(--color-accent);
   line-height: 1.2;
 }

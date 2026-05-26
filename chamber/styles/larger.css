@@ -4,7 +4,7 @@
   header { padding: 1.25rem 2rem; }
   main { padding: 2rem; }
 
-  .header-brand h1 { font-size: 1.5rem; }
+  .header-brand .brand-name { font-size: 1.5rem; }
 
   /* Nav: horizontal */
   .nav-toggle { display: none; }
@@ -80,7 +80,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .header-brand h1 { font-size: 1.75rem; }
+  .header-brand .brand-name { font-size: 1.75rem; }
 
   /* Home grid: 3-column layout */
   .home-grid {

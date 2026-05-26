@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Directory of member businesses of the Santo Domingo Chamber of Commerce.">
+  <meta name="description" content="Santo Domingo Chamber of Commerce – connecting local businesses and driving economic growth in the Dominican Republic.">
   <meta name="author" content="Jose">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Santo Domingo Chamber of Commerce – Member Directory">
-  <meta property="og:description" content="Explore the member businesses of the Santo Domingo Chamber of Commerce.">
-  <meta property="og:image" content="https://schmuckedj.github.io/wdd231/chamber/images/profile.svg">
-  <meta property="og:url" content="https://schmuckedj.github.io/wdd231/chamber/directory.html">
+  <meta property="og:title" content="Santo Domingo Chamber of Commerce">
+  <meta property="og:description" content="Connecting local businesses and driving economic growth in the Dominican Republic.">
+  <meta property="og:image" content="https://schmuckedj.github.io/wdd231/chamber/images/hero.webp">
+  <meta property="og:url" content="https://schmuckedj.github.io/wdd231/chamber/index.html">
 
-  <title>Member Directory | Santo Domingo Chamber of Commerce</title>
+  <title>Home | Santo Domingo Chamber of Commerce</title>
 
   <link rel="icon" href="../favicon.ico" type="image/x-icon">
 
@@ -42,33 +42,64 @@
       </div>
     </button>
     <ul id="primary-nav">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="directory.html" class="active">Directory</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
       <li><a href="join.html">Join</a></li>
       <li><a href="discover.html">Discover</a></li>
     </ul>
   </nav>
 
   <main>
-    <div class="directory-controls">
-      <h2>Member Directory</h2>
-      <div class="view-buttons">
-        <button class="view-btn" id="grid-btn" title="Grid view" aria-label="Grid view">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
-            <rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/>
-          </svg>
-        </button>
-        <button class="view-btn" id="list-btn" title="List view" aria-label="List view">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/>
-            <line x1="3" y1="18" x2="21" y2="18"/>
-          </svg>
-        </button>
-      </div>
-    </div>
 
-    <div id="members-container" class="grid"></div>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Growing Together in the Dominican Republic</h2>
+        <p>The Santo Domingo Chamber of Commerce connects local businesses, fosters economic development, and champions the entrepreneurial spirit of our city.</p>
+        <a href="join.html" class="cta-btn">Join the Chamber</a>
+      </div>
+    </section>
+
+    <!-- HOME GRID LAYOUT -->
+    <div class="home-grid">
+
+      <!-- WEATHER -->
+      <section class="home-card" id="weather-section">
+        <h2 class="section-title">Current Weather</h2>
+        <div id="weather-now">
+          <p class="weather-loading">Loading weather…</p>
+        </div>
+        <h3 class="forecast-title">3-Day Forecast</h3>
+        <div id="weather-forecast" class="forecast-grid"></div>
+      </section>
+
+      <!-- EVENTS -->
+      <section class="home-card" id="events-section">
+        <h2 class="section-title">Upcoming Events</h2>
+        <div class="event">
+          <h3>Business Networking Mixer</h3>
+          <p class="event-meta">June 10, 2025 &bull; 6:00 PM</p>
+          <p>Join fellow business owners at Hotel Majestic Caribe for our monthly networking event. Light refreshments included.</p>
+        </div>
+        <div class="event">
+          <h3>Chamber Annual Gala</h3>
+          <p class="event-meta">July 5, 2025 &bull; 7:30 PM</p>
+          <p>Celebrate the year's achievements with awards, dinner, and keynote speaker at the Santo Domingo Convention Center.</p>
+        </div>
+        <div class="event">
+          <h3>Small Business Workshop</h3>
+          <p class="event-meta">June 24, 2025 &bull; 9:00 AM</p>
+          <p>Free workshop on digital marketing strategies for small and medium businesses. Registration required.</p>
+        </div>
+      </section>
+
+      <!-- SPOTLIGHTS -->
+      <section class="home-card spotlight-section" id="spotlight-section">
+        <h2 class="section-title">Member Spotlights</h2>
+        <div id="spotlights-container"></div>
+      </section>
+
+    </div>
   </main>
 
   <footer>
@@ -99,7 +130,7 @@
   </footer>
 
   <script src="scripts/date.js" defer></script>
-  <script src="scripts/members.js" defer></script>
+  <script src="scripts/home.js" defer></script>
   <script>
     document.getElementById('nav-toggle').addEventListener('click', function() {
       const nav = document.getElementById('primary-nav');

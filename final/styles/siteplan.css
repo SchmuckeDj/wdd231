@@ -1,0 +1,384 @@
+/* ===== VARIABLES ===== */
+:root {
+  --bg: #0a0e1a;
+  --surface: #0d1b2e;
+  --surface-2: #112240;
+  --cyan: #00f0ff;
+  --purple: #7b2fff;
+  --pink: #ff2d78;
+  --text: #e0e6f0;
+  --muted: #7a8ba8;
+  --border: rgba(0, 240, 255, 0.12);
+  --radius: 10px;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0;
+  min-width: 320px;
+}
+
+a { color: var(--cyan); }
+
+/* ===== HEADER ===== */
+header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 1.5rem 1.5rem 1.2rem;
+  text-align: center;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, var(--cyan), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.25rem;
+}
+
+.header-sub {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 0;
+  font-family: var(--font-mono);
+}
+
+/* ===== MAIN ===== */
+main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* ===== SECTIONS ===== */
+.plan-section h2 {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  color: var(--cyan);
+  margin: 0 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.section-num {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--purple);
+  background: rgba(123, 47, 255, 0.15);
+  border: 1px solid rgba(123, 47, 255, 0.3);
+  padding: 0.1rem 0.5rem;
+  border-radius: 4px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+
+.card p { margin: 0 0 0.75rem; color: var(--text); font-size: 0.95rem; }
+.card p:last-child { margin-bottom: 0; }
+.card strong { color: var(--cyan); }
+
+.site-title-display {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, var(--cyan), var(--purple), var(--pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.75rem !important;
+}
+
+.domain {
+  margin-top: 0.75rem !important;
+  color: var(--muted) !important;
+  font-size: 0.85rem !important;
+}
+
+.domain code {
+  font-family: var(--font-mono);
+  color: var(--cyan);
+  background: rgba(0,240,255,0.08);
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.82rem;
+}
+
+/* ===== SCENARIOS ===== */
+.scenario-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.scenario-list li {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.q-mark {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(135deg, var(--purple), var(--pink));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #fff;
+  margin-top: 0.15rem;
+}
+
+.scenario-list p {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.92rem;
+}
+
+/* ===== COLOR SWATCHES ===== */
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.75rem;
+}
+
+.color-swatch {
+  border-radius: var(--radius);
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  position: relative;
+}
+
+.swatch-info {
+  width: 100%;
+  background: rgba(0,0,0,0.55);
+  padding: 0.4rem 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.swatch-info.dark {
+  background: rgba(255,255,255,0.45);
+}
+
+.hex {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.swatch-info.dark .hex,
+.swatch-info.dark .usage {
+  color: #0a0e1a;
+}
+
+.usage {
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.8);
+}
+
+/* ===== TYPOGRAPHY ===== */
+.typo-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.font-row {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1.25rem;
+}
+
+.font-row:last-child { border-bottom: none; padding-bottom: 0; }
+
+.font-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.font-name {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--cyan);
+  background: rgba(0,240,255,0.08);
+  border: 1px solid rgba(0,240,255,0.2);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+}
+
+.font-use {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.font-sample { margin: 0; }
+
+.heading-sample {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.body-sample {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.mono-sample {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--purple);
+}
+
+/* ===== WIREFRAME ===== */
+.wireframe-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.wireframe-group h3 {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--text);
+  margin: 0 0 0.75rem;
+}
+
+.wf-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.wf {
+  border: 1px dashed rgba(0,240,255,0.25);
+  border-radius: var(--radius);
+  padding: 0.75rem;
+  background: rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.wf-mobile { max-width: 300px; }
+
+.wf-block {
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.72rem;
+  font-family: var(--font-mono);
+  color: var(--muted);
+  text-align: center;
+}
+
+.wf-header { background: rgba(0,240,255,0.1); border: 1px solid rgba(0,240,255,0.2); color: var(--cyan); }
+.wf-hero { background: rgba(123,47,255,0.1); border: 1px solid rgba(123,47,255,0.25); min-height: 70px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.4rem; }
+.wf-section { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); }
+.wf-footer { background: rgba(255,45,120,0.08); border: 1px solid rgba(255,45,120,0.2); color: var(--pink); }
+
+.wf-text-line { height: 8px; border-radius: 4px; background: rgba(255,255,255,0.2); }
+.wf-text-line.wide { width: 80%; }
+.wf-text-line.medium { width: 55%; }
+
+.wf-btn-mock {
+  background: var(--pink);
+  color: #fff;
+  font-size: 0.65rem;
+  font-family: var(--font-mono);
+  padding: 0.2rem 0.7rem;
+  border-radius: 4px;
+  margin-top: 0.25rem;
+}
+
+.wf-label-inline {
+  font-size: 0.68rem;
+  font-family: var(--font-mono);
+  color: var(--purple);
+  margin-bottom: 0.4rem;
+  text-align: left;
+}
+
+.wf-card-mock {
+  height: 50px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 5px;
+  border: 1px dashed rgba(255,255,255,0.1);
+}
+
+.wf-list-mock { display: flex; flex-direction: column; gap: 0.35rem; }
+.wf-list-item { height: 18px; background: rgba(255,255,255,0.06); border-radius: 4px; border-left: 2px solid var(--cyan); }
+
+.wf-stats-mock { display: flex; gap: 0.4rem; }
+.wf-stats-mock.col { flex-direction: column; }
+.wf-stat { flex: 1; height: 30px; background: rgba(0,240,255,0.07); border-radius: 5px; border: 1px solid rgba(0,240,255,0.15); }
+
+/* desktop wireframe */
+.wf-desktop-grid {
+  display: grid;
+  grid-template-columns: 1fr 180px;
+  gap: 0.5rem;
+}
+
+.wf-main-col, .wf-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  text-align: center;
+  padding: 1.25rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-family: var(--font-mono);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (min-width: 640px) {
+  .wireframe-card {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .wireframe-group { flex: 1; }
+}

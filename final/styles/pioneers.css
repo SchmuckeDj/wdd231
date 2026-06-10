@@ -1,0 +1,45 @@
+.pioneer-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.pioneer-name {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--cyan);
+  margin: 0 0 0.2rem;
+}
+
+.pioneer-known {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--purple);
+  margin: 0 0 0.5rem;
+}
+
+.pioneer-bio {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin: 0 0 0.6rem;
+}
+
+.pioneer-milestones {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.pioneer-milestones strong {
+  color: var(--text);
+}
+
+@media (min-width: 640px) {
+  #pioneers-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+  .pioneer-card { margin-bottom: 0; }
+}

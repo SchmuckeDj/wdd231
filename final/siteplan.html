@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site plan for AI Chronicles – a history of artificial intelligence website.">
+  <meta name="author" content="Jose Gregorio Schmucke">
+  <title>Site Plan | AI Chronicles</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">AI Chronicles</div>
+    <p class="header-sub">WDD 231 — Individual Project Site Plan</p>
+  </header>
+
+  <main>
+
+    <!-- 1. SITE NAME -->
+    <section class="plan-section" id="site-name">
+      <h2><span class="section-num">01</span> Site Name</h2>
+      <div class="card">
+        <p class="site-title-display">AI Chronicles</p>
+        <p>The name <strong>AI Chronicles</strong> was chosen because it conveys a sense of ongoing history and documentation — a chronicle is a factual account of events ordered by time, which perfectly matches the mission of this site: to record and present the history of artificial intelligence from its origins to the present day.</p>
+        <p class="domain">Optional domain: <code>aichronicles.dev</code></p>
+      </div>
+    </section>
+
+    <!-- 2. SITE PURPOSE -->
+    <section class="plan-section" id="site-purpose">
+      <h2><span class="section-num">02</span> Site Purpose</h2>
+      <div class="card">
+        <p>AI Chronicles is an educational, three-page website that documents the history of artificial intelligence. The site presents an interactive timeline of key milestones, profiles of the pioneers and researchers who shaped the field, and a curated list of landmark papers and their impact. Visitors can explore and filter AI history data loaded dynamically from a local JSON source.</p>
+      </div>
+    </section>
+
+    <!-- 3. SCENARIOS -->
+    <section class="plan-section" id="scenarios">
+      <h2><span class="section-num">03</span> Scenarios</h2>
+      <div class="card">
+        <ul class="scenario-list">
+          <li>
+            <span class="q-mark">?</span>
+            <p>When did artificial intelligence first emerge, and what were the earliest breakthroughs that made modern AI possible?</p>
+          </li>
+          <li>
+            <span class="q-mark">?</span>
+            <p>Who are the most influential researchers in AI history and what contributions did each of them make to the field?</p>
+          </li>
+          <li>
+            <span class="q-mark">?</span>
+            <p>What are the most important research papers in AI, and where can I learn more about their findings?</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4. COLOR SCHEME -->
+    <section class="plan-section" id="color-scheme">
+      <h2><span class="section-num">04</span> Color Scheme</h2>
+      <div class="card">
+        <div class="color-grid">
+
+          <div class="color-swatch" style="background:#0a0e1a;">
+            <div class="swatch-info">
+              <span class="hex">#0A0E1A</span>
+              <span class="usage">Background / Page Base</span>
+            </div>
+          </div>
+
+          <div class="color-swatch" style="background:#0d1b2e;">
+            <div class="swatch-info">
+              <span class="hex">#0D1B2E</span>
+              <span class="usage">Card / Surface</span>
+            </div>
+          </div>
+
+          <div class="color-swatch" style="background:#00f0ff;">
+            <div class="swatch-info dark">
+              <span class="hex">#00F0FF</span>
+              <span class="usage">Primary Accent — Cyan</span>
+            </div>
+          </div>
+
+          <div class="color-swatch" style="background:#7b2fff;">
+            <div class="swatch-info">
+              <span class="hex">#7B2FFF</span>
+              <span class="usage">Secondary Accent — Purple</span>
+            </div>
+          </div>
+
+          <div class="color-swatch" style="background:#ff2d78;">
+            <div class="swatch-info">
+              <span class="hex">#FF2D78</span>
+              <span class="usage">Highlight / CTA Buttons</span>
+            </div>
+          </div>
+
+          <div class="color-swatch" style="background:#e0e6f0; border: 1px solid #334;">
+            <div class="swatch-info dark">
+              <span class="hex">#E0E6F0</span>
+              <span class="usage">Body Text</span>
+            </div>
+          </div>
+
+          <div class="color-swatch" style="background:#7a8ba8;">
+            <div class="swatch-info dark">
+              <span class="hex">#7A8BA8</span>
+              <span class="usage">Muted Text / Meta</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. TYPOGRAPHY -->
+    <section class="plan-section" id="typography">
+      <h2><span class="section-num">05</span> Typography</h2>
+      <div class="card typo-card">
+
+        <div class="font-row">
+          <div class="font-meta">
+            <span class="font-name">Space Grotesk</span>
+            <span class="font-use">Headings, Site Name, Section Titles</span>
+          </div>
+          <p class="font-sample heading-sample">The History of Artificial Intelligence</p>
+        </div>
+
+        <div class="font-row">
+          <div class="font-meta">
+            <span class="font-name">Inter</span>
+            <span class="font-use">Body text, paragraphs, descriptions, navigation</span>
+          </div>
+          <p class="font-sample body-sample">Alan Turing proposed the concept of a machine that could simulate any human intelligence task, laying the theoretical groundwork for modern computing.</p>
+        </div>
+
+        <div class="font-row">
+          <div class="font-meta">
+            <span class="font-name">JetBrains Mono</span>
+            <span class="font-use">Dates, years on timeline, data labels</span>
+          </div>
+          <p class="font-sample mono-sample">1956 — Dartmouth Conference → Birth of AI</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. WIREFRAME -->
+    <section class="plan-section" id="wireframe">
+      <h2><span class="section-num">06</span> Wireframe — Home Page</h2>
+      <div class="card wireframe-card">
+
+        <div class="wireframe-group">
+          <h3>Mobile <span class="wf-label">≤ 768px</span></h3>
+          <div class="wf wf-mobile">
+            <div class="wf-block wf-header">Header / Logo + Nav Toggle</div>
+            <div class="wf-block wf-hero">
+              <div class="wf-text-line wide"></div>
+              <div class="wf-text-line medium"></div>
+              <div class="wf-btn-mock">Explore Timeline →</div>
+            </div>
+            <div class="wf-block wf-section">
+              <div class="wf-label-inline">Featured Milestone</div>
+              <div class="wf-card-mock"></div>
+            </div>
+            <div class="wf-block wf-section">
+              <div class="wf-label-inline">Timeline Preview (3 items)</div>
+              <div class="wf-list-mock">
+                <div class="wf-list-item"></div>
+                <div class="wf-list-item"></div>
+                <div class="wf-list-item"></div>
+              </div>
+            </div>
+            <div class="wf-block wf-section">
+              <div class="wf-label-inline">Quick Stats</div>
+              <div class="wf-stats-mock">
+                <div class="wf-stat"></div>
+                <div class="wf-stat"></div>
+              </div>
+            </div>
+            <div class="wf-block wf-footer">Footer</div>
+          </div>
+        </div>
+
+        <div class="wireframe-group">
+          <h3>Desktop <span class="wf-label">≥ 1024px</span></h3>
+          <div class="wf wf-desktop">
+            <div class="wf-block wf-header wf-full">Header / Logo + Nav Links</div>
+            <div class="wf-block wf-hero wf-full">
+              <div class="wf-text-line wide"></div>
+              <div class="wf-text-line medium"></div>
+              <div class="wf-btn-mock">Explore Timeline →</div>
+            </div>
+            <div class="wf-desktop-grid">
+              <div class="wf-block wf-section wf-main-col">
+                <div class="wf-label-inline">Timeline Preview</div>
+                <div class="wf-list-mock">
+                  <div class="wf-list-item"></div>
+                  <div class="wf-list-item"></div>
+                  <div class="wf-list-item"></div>
+                  <div class="wf-list-item"></div>
+                </div>
+              </div>
+              <div class="wf-sidebar">
+                <div class="wf-block wf-section">
+                  <div class="wf-label-inline">Featured Person</div>
+                  <div class="wf-card-mock"></div>
+                </div>
+                <div class="wf-block wf-section">
+                  <div class="wf-label-inline">Quick Stats</div>
+                  <div class="wf-stats-mock col">
+                    <div class="wf-stat"></div>
+                    <div class="wf-stat"></div>
+                    <div class="wf-stat"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wf-block wf-footer wf-full">Footer</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&#169; <span id="year"></span> Jose Gregorio Schmucke &bull; WDD 231 &bull; AI Chronicles Site Plan</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

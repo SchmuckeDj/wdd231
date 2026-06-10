@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thank you for your message to AI Chronicles.">
+  <meta name="author" content="Jose Gregorio Schmucke">
+  <title>Thank You | AI Chronicles</title>
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <header>
+    <span class="logo">AI Chronicles</span>
+  </header>
+
+  <nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+      Menu
+      <span class="hamburger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+    </button>
+    <ul id="primary-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="timeline.html">Timeline</a></li>
+      <li><a href="pioneers.html">Pioneers</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="card" style="max-width:500px; text-align:center; margin: 2rem auto;">
+      <p style="font-size:2.5rem; margin:0 0 0.5rem;">✅</p>
+      <h1 style="font-family:var(--font-heading); color:var(--cyan); margin:0 0 0.75rem;">Message Received!</h1>
+      <p style="color:var(--muted); font-size:0.9rem; margin:0 0 1.5rem;">Thanks for reaching out. Here's what you submitted:</p>
+      <dl id="submitted-data" style="text-align:left;"></dl>
+      <a href="index.html" class="btn" style="margin-top:1rem; display:inline-block;">Back to Home</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="pioneers.html">Pioneers</a>
+      <a href="contact.html">Contact</a>
+      <a href="attributions.html">Attributions</a>
+      <a href="https://youtube.com" target="_blank" rel="noopener">📹 Project Video</a>
+    </div>
+    <p>© <span id="year"></span> Jose Gregorio Schmucke · WDD 231 · AI Chronicles</p>
+  </footer>
+
+  <script type="module" src="scripts/nav.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const dl = document.getElementById('submitted-data');
+    const fields = [
+      { key: 'fname', label: 'First Name' },
+      { key: 'lname', label: 'Last Name' },
+      { key: 'email', label: 'Email' },
+      { key: 'topic', label: 'Topic' },
+      { key: 'timestamp', label: 'Submitted' },
+    ];
+    fields.forEach(({ key, label }) => {
+      const val = params.get(key);
+      if (val) {
+        dl.innerHTML += `
+          <div style="display:grid; grid-template-columns: 100px 1fr; gap:0.25rem 1rem; margin-bottom:0.4rem;">
+            <dt style="font-size:0.78rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em;">${label}</dt>
+            <dd style="font-size:0.88rem; color:var(--text); margin:0;">${val}</dd>
+          </div>`;
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+{
+  "milestones": [
+    {
+      "id": 1,
+      "year": 1950,
+      "title": "The Turing Test",
+      "category": "theory",
+      "person": "Alan Turing",
+      "description": "Alan Turing published 'Computing Machinery and Intelligence', proposing the famous Turing Test to determine if a machine can exhibit intelligent behavior indistinguishable from a human.",
+      "impact": "Defined the foundational question of AI: can machines think?"
+    },
+    {
+      "id": 2,
+      "year": 1956,
+      "title": "Birth of AI — Dartmouth Conference",
+      "category": "milestone",
+      "person": "John McCarthy",
+      "description": "John McCarthy coined the term 'Artificial Intelligence' at the Dartmouth Conference, marking the official birth of AI as a field of study.",
+      "impact": "Established AI as a formal academic discipline."
+    },
+    {
+      "id": 3,
+      "year": 1958,
+      "title": "The Perceptron",
+      "category": "algorithm",
+      "person": "Frank Rosenblatt",
+      "description": "Frank Rosenblatt invented the Perceptron, the first artificial neural network capable of learning from data.",
+      "impact": "Laid the groundwork for modern neural networks and deep learning."
+    },
+    {
+      "id": 4,
+      "year": 1965,
+      "title": "ELIZA — First Chatbot",
+      "category": "application",
+      "person": "Joseph Weizenbaum",
+      "description": "Joseph Weizenbaum created ELIZA, one of the first programs to simulate conversation between a human and a machine using pattern matching.",
+      "impact": "Demonstrated that humans could be tricked into believing they were talking to a person."
+    },
+    {
+      "id": 5,
+      "year": 1969,
+      "title": "Shakey the Robot",
+      "category": "robotics",
+      "person": "SRI International",
+      "description": "Shakey was the first general-purpose mobile robot that could reason about its own actions, combining robotics and AI planning.",
+      "impact": "Pioneered the integration of perception, reasoning, and action in robotics."
+    },
+    {
+      "id": 6,
+      "year": 1974,
+      "title": "First AI Winter",
+      "category": "history",
+      "person": "Various",
+      "description": "Funding and interest in AI research dropped significantly due to unmet expectations and criticism of progress, entering a period known as the 'AI Winter'.",
+      "impact": "Forced researchers to focus on more realistic and achievable goals."
+    },
+    {
+      "id": 7,
+      "year": 1980,
+      "title": "Expert Systems Boom",
+      "category": "application",
+      "person": "Edward Feigenbaum",
+      "description": "Expert systems like XCON became commercially successful, using rule-based AI to solve complex domain-specific problems.",
+      "impact": "Brought AI into real business applications for the first time."
+    },
+    {
+      "id": 8,
+      "year": 1986,
+      "title": "Backpropagation Rediscovered",
+      "category": "algorithm",
+      "person": "Geoffrey Hinton",
+      "description": "Geoffrey Hinton popularized the backpropagation algorithm, enabling neural networks with multiple layers to learn effectively.",
+      "impact": "Revived neural network research and eventually led to deep learning."
+    },
+    {
+      "id": 9,
+      "year": 1997,
+      "title": "Deep Blue Beats Kasparov",
+      "category": "milestone",
+      "person": "IBM",
+      "description": "IBM's Deep Blue became the first computer to defeat a reigning world chess champion, Garry Kasparov, in a match under standard chess tournament conditions.",
+      "impact": "Proved that AI could surpass human performance in complex strategic games."
+    },
+    {
+      "id": 10,
+      "year": 2006,
+      "title": "Deep Learning Revolution",
+      "category": "algorithm",
+      "person": "Geoffrey Hinton",
+      "description": "Geoffrey Hinton introduced deep belief networks, showing that deep neural networks could be trained efficiently, kickstarting the deep learning era.",
+      "impact": "Transformed AI research and led to breakthroughs in vision, speech, and language."
+    },
+    {
+      "id": 11,
+      "year": 2011,
+      "title": "IBM Watson Wins Jeopardy!",
+      "category": "milestone",
+      "person": "IBM",
+      "description": "IBM's Watson defeated human champions on the game show Jeopardy!, demonstrating advanced natural language processing and knowledge retrieval.",
+      "impact": "Showed AI's ability to understand and process natural human language at scale."
+    },
+    {
+      "id": 12,
+      "year": 2012,
+      "title": "AlexNet Wins ImageNet",
+      "category": "algorithm",
+      "person": "Alex Krizhevsky",
+      "description": "AlexNet, a deep convolutional neural network, dramatically outperformed all other models in the ImageNet competition, revolutionizing computer vision.",
+      "impact": "Sparked the modern deep learning era and changed how we approach image recognition."
+    },
+    {
+      "id": 13,
+      "year": 2016,
+      "title": "AlphaGo Defeats Lee Sedol",
+      "category": "milestone",
+      "person": "DeepMind",
+      "description": "Google DeepMind's AlphaGo defeated world Go champion Lee Sedol 4-1, a feat previously thought to be decades away due to the game's complexity.",
+      "impact": "Demonstrated that AI could master intuition-based games far beyond human capability."
+    },
+    {
+      "id": 14,
+      "year": 2017,
+      "title": "Transformer Architecture",
+      "category": "algorithm",
+      "person": "Google Brain",
+      "description": "Google researchers published 'Attention Is All You Need', introducing the Transformer architecture that powers most modern AI language models.",
+      "impact": "Became the foundation for GPT, BERT, and virtually every major language model today."
+    },
+    {
+      "id": 15,
+      "year": 2020,
+      "title": "GPT-3 Released",
+      "category": "application",
+      "person": "OpenAI",
+      "description": "OpenAI released GPT-3, a language model with 175 billion parameters capable of generating human-like text, code, and answering questions.",
+      "impact": "Showed that large language models could perform a wide range of tasks without specific training."
+    },
+    {
+      "id": 16,
+      "year": 2022,
+      "title": "ChatGPT Launch",
+      "category": "application",
+      "person": "OpenAI",
+      "description": "OpenAI launched ChatGPT, reaching 1 million users in just 5 days and sparking global conversation about the role of AI in everyday life.",
+      "impact": "Made AI accessible to the general public and triggered an AI adoption wave worldwide."
+    },
+    {
+      "id": 17,
+      "year": 2023,
+      "title": "Multimodal AI Goes Mainstream",
+      "category": "milestone",
+      "person": "Various",
+      "description": "Models like GPT-4, Gemini, and Claude gained the ability to process both text and images, enabling richer and more versatile AI interactions.",
+      "impact": "Expanded AI use cases into design, medicine, education, and beyond."
+    }
+  ]
+}

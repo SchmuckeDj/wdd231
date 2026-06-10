@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet the pioneers who shaped artificial intelligence — researchers, scientists, and visionaries.">
+  <meta name="author" content="Jose Gregorio Schmucke">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pioneers | AI Chronicles">
+  <meta property="og:description" content="The researchers and visionaries who built the foundation of modern AI.">
+  <meta property="og:url" content="https://schmuckedj.github.io/wdd231/final/pioneers.html">
+  <title>Pioneers | AI Chronicles</title>
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/pioneers.css">
+</head>
+<body>
+
+  <header>
+    <span class="logo">AI Chronicles</span>
+  </header>
+
+  <nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+      Menu
+      <span class="hamburger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+    </button>
+    <ul id="primary-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="timeline.html">Timeline</a></li>
+      <li><a href="pioneers.html" class="active">Pioneers</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1 class="section-title">AI Pioneers</h1>
+    <p style="color:var(--muted); margin-bottom:1.5rem; font-size:0.9rem;">The researchers and visionaries who built the foundation of modern artificial intelligence.</p>
+    <div id="pioneers-container">
+      <p style="color:var(--muted)">Loading pioneers…</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="pioneers.html">Pioneers</a>
+      <a href="contact.html">Contact</a>
+      <a href="attributions.html">Attributions</a>
+      <a href="https://youtube.com" target="_blank" rel="noopener">📹 Project Video</a>
+    </div>
+    <p>© <span id="year"></span> Jose Gregorio Schmucke · WDD 231 · AI Chronicles</p>
+  </footer>
+
+  <script type="module" src="scripts/nav.js"></script>
+  <script type="module" src="scripts/pioneers.js"></script>
+</body>
+</html>
